@@ -10,8 +10,8 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 public class OrderDetailDto {
-    private String orderID;
-    private String itemCode;
+    private Integer orderId;
+    private Integer itemCode;
     private Integer orderQty;
     private double discount;
 }

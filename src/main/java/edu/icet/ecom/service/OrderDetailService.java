@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface OrderDetailService {
     List<OrderDetailDto> getAll();
+
+    void AddOrderDetail(OrderDetailDto orderDetail);
 }

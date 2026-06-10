@@ -18,6 +18,6 @@ public class Order {
     private Integer orderId;
     private LocalDate orderDate;
     @ManyToOne
-    @JoinColumn(name= "customerId")
+    @JoinColumn(name= "customer_id")
     private Customer customer;
 }

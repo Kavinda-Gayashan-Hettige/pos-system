@@ -2,6 +2,7 @@ package edu.icet.ecom.service.impl;
 
 import edu.icet.ecom.model.dto.OrderDetailDto;
 
+import edu.icet.ecom.model.entity.Order;
 import edu.icet.ecom.model.entity.OrderDetail;
 import edu.icet.ecom.repository.OrderDetailRepository;
 import edu.icet.ecom.service.OrderDetailService;
@@ -26,5 +27,10 @@ public class OrderDetailServiceImpl implements OrderDetailService {
         });
 
         return orderDetailList;
+    }
+
+    @Override
+    public void AddOrderDetail(OrderDetailDto orderDetail) {
+        repository.save(mapper.map(orderDetail, OrderDetail.class));
     }
 }
