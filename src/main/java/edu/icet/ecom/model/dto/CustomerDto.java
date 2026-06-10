@@ -10,7 +10,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class CustomerDto {
-    private Integer id;
+    private Integer customerId;
     private String name;
     private String address;
     private Double salary;
