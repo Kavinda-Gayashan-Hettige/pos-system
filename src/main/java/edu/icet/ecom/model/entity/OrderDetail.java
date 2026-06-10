@@ -11,15 +11,9 @@ import lombok.*;
 @Entity
 @Table(name = "order_detail")
 public class OrderDetail {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    @ManyToOne
-    @JoinColumn(name="order_id")
-    private Order order;
-    @ManyToOne
-    @JoinColumn(name= "item_code")
-    private Item item;
+@Id
+    private Integer orderID;
+    private Integer itemCode;
     private Integer orderQty;
     private double discount;
 }

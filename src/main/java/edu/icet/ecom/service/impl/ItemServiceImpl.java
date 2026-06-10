@@ -1,6 +1,8 @@
 package edu.icet.ecom.service.impl;
 
 
+import edu.icet.ecom.model.dto.CartItem;
+import edu.icet.ecom.model.dto.CustomerDto;
 import edu.icet.ecom.model.dto.ItemDto;
 
 import edu.icet.ecom.model.entity.Item;
@@ -38,6 +40,16 @@ public class ItemServiceImpl implements ItemService {
     @Override
     public void deleteItem(Integer id) {
         repository.deleteById(id);
+    }
+
+    @Override
+    public Item searchItem(Integer itemCode, Object o) {
+        return mapper.map(repository.findById(itemCode), Item.class);
+    }
+
+    @Override
+    public boolean updateItemQuantity(List<CartItem> cartItemObservableList) {
+        return false;
     }
 
 

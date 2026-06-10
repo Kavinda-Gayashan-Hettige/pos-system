@@ -19,9 +19,10 @@ public class OrderServiceImpl implements OrderService {
     final ModelMapper mapper;
     final OrderRepository repository;
     @Override
-    public void AddOrder(OrderDto order) {
+    public boolean AddOrder(OrderDto order) {
 
         repository.save(mapper.map(order, Order.class));
+        return true;
     }
 
     @Override

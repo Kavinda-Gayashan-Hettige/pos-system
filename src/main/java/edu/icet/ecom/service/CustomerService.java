@@ -1,6 +1,7 @@
 package edu.icet.ecom.service;
 
 import edu.icet.ecom.model.dto.CustomerDto;
+import edu.icet.ecom.model.entity.Customer;
 
 import java.util.List;
 
@@ -16,4 +17,6 @@ public interface CustomerService {
     CustomerDto searchById(Integer id);
 
     List<CustomerDto> searchByName(String name);
+
+    Customer getCustomer(String customerId);
 }

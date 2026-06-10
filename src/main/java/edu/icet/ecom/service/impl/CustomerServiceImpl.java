@@ -58,4 +58,9 @@ public class CustomerServiceImpl implements CustomerService {
         });
         return customerList;
     }
+
+    @Override
+    public Customer getCustomer(String customerId) {
+        return null;
+    }
 }
