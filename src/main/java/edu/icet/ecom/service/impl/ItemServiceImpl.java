@@ -1,8 +1,8 @@
 package edu.icet.ecom.service.impl;
 
-import edu.icet.ecom.model.dto.CustomerDto;
+
 import edu.icet.ecom.model.dto.ItemDto;
-import edu.icet.ecom.model.entity.Customer;
+
 import edu.icet.ecom.model.entity.Item;
 import edu.icet.ecom.repository.ItemRepository;
 import edu.icet.ecom.service.ItemService;

@@ -1,14 +1,14 @@
 package edu.icet.ecom.service.impl;
 
-import edu.icet.ecom.model.dto.ItemDto;
+
 import edu.icet.ecom.model.dto.OrderDto;
-import edu.icet.ecom.model.entity.Item;
+
 import edu.icet.ecom.model.entity.Order;
 import edu.icet.ecom.repository.OrderRepository;
 import edu.icet.ecom.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.stereotype.Repository;
+
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
