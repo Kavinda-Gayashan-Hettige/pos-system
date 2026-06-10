@@ -35,7 +35,10 @@ public class ItemServiceImpl implements ItemService {
         return itemList;
     }
 
-
+    @Override
+    public void deleteItem(Integer id) {
+        repository.deleteById(id);
+    }
 
 
 }

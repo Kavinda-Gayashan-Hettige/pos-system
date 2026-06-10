@@ -23,4 +23,9 @@ public class ItemController {
     public List<ItemDto> getAll(){
         return service.getAll();
     }
+
+    @DeleteMapping("/delete/{id}")
+    public void deleteItem(@PathVariable Integer id){
+        service.deleteItem(id);
+    }
 }

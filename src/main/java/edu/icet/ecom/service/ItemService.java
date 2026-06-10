@@ -8,4 +8,6 @@ public interface ItemService {
     void AddItem(ItemDto item);
 
     List<ItemDto> getAll();
+
+    void deleteItem(Integer id);
 }
