@@ -6,6 +6,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/item")
 @RequiredArgsConstructor
@@ -15,5 +17,10 @@ public class ItemController {
     @ResponseStatus(HttpStatus.CREATED)
     public void AddItem(@RequestBody ItemDto item){
         service.AddItem(item);
+    }
+
+    @GetMapping("/get-all")
+    public List<ItemDto> getAll(){
+        return service.getAll();
     }
 }
